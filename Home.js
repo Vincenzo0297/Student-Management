@@ -5,10 +5,13 @@ const deleteEmployees = require("./Common Function/Delete");
 const searchEmployees = require("./Common Function/Search");
 const viewAllEmployees = require("./Common Function/View");
 
+// Import the readline module (built-in Node.js module for CLI input/output)
 const readline = require("readline");
+
+// Create an interface to connect the program with the terminal
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
+    input: process.stdin, // process.stdin = where user types input (keyboard)
+    output: process.stdout // process.stdout = where program prints output (terminal screen)
 });
 
 function ask(question) {
@@ -26,7 +29,7 @@ function menu() {
 
 async function main() {  
     let choices;
-    let employees = [];
+    let employees = []; //Creates an empty space ready to store data.
 
     try {
         do {
