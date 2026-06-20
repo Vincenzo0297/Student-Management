@@ -69,9 +69,6 @@ async function main() {
 
 main();
 
-// const user = new User("John", 25, "john@example.com", "12345678");
-// user.printInfo();
-
 // Async/Await = Async = makes a function return a promise
 //               Await = makes an async function wait for a promise
 
