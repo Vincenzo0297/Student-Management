@@ -6,7 +6,6 @@ const searchEmployees = require("./Common Function/Search");
 const viewAllEmployees = require("./Common Function/View");
 
 const readline = require("readline");
-
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
