@@ -83,10 +83,10 @@ main();
 
 
 
-//const → cannot reassign or redeclare
+//const → cannot reassign or redeclare -> most common
 //const → use by default (value won’t be reassigned)
 
-//let → can reassign, cannot redeclare
+//let → can reassign, cannot redeclare -> most common
 //let → use if the value will change
 
 //var → can redeclare and reassign (can accidentally overwrite)
