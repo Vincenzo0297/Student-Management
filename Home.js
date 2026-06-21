@@ -1,6 +1,6 @@
 const User = require("./Classes/Class");
 const addStudents = require("./Common Function/Add");
-const updateEmployees = require("./Common Function/Edit");
+const updateStudents = require("./Common Function/Edit");
 const deleteStudents = require("./Common Function/Delete");
 const searchStudents = require("./Common Function/Search");
 const viewAllStudents = require("./Common Function/View");
@@ -49,6 +49,18 @@ async function main() {
                     console.log("");
                     break;
                 case "2":
+                    const searchName = await ask("Student name to update: ");
+                    const updateAge = await ask("Update Student age: ");
+                    const updateEmail = await ask("Update Student email: ");
+                    const updateNumber = await ask("Update Student number: ");
+                    //Update undefine
+                    const queryUpdate = {
+                        age: updateAge,
+                        email: updateEmail,
+                        number: updateNumber || undefined
+                    };
+
+                    updateStudents(students, queryUpdate, searchName);
                     console.log("");
                     break;
                 case "3":

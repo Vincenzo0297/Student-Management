@@ -29,6 +29,10 @@ function addStudents(Students, student) {
 
         if (isValid) {
             Students.push(student);
+            console.log("\n=== Student is Added ===");
+            Students.forEach((student, Index) => {
+               console.log(`${Index + 1}. Name: ${student.name}, Age: ${student.age}, Email: ${student.email}, Number: ${student.number}`);            
+            });
         }
     } catch(error) {
         console.log("Error adding the student details", error);

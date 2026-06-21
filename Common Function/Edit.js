@@ -1,41 +1,34 @@
+function updateStudents(Students, queryUpdate, searchName) {
+    try {
+        const { updateAge, updateEmail, updateNumber } = queryUpdate;
+
+        const foundStudent = Students.find(
+            student => student.name.toLowerCase() === searchName.toLowerCase()
+        );
+
+        if (!foundStudent) {
+            console.log("Student is not found");
+            return;
+        }
+
+        foundStudent.age = updateAge;
+        foundStudent.email = updateEmail;
+        foundStudent.number = updateNumber;
+
+        console.log("\n=== Student Updated ===");
+        console.log(foundStudent);
+
+    } catch (error) {
+        console.log("Error updating student");
+        console.error(error);
+    }
+}
+
+module.exports = updateStudents;
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function updateEmployee(employees, query, newName, newAge, newEmail, newNumber) {
-//     try {
-//         if (employees.length === 0) {
-//             console.log("Employee is not found");
-//             return;
-//         }
-
-//         const employee = employees.find(
-//             (employee) => employee.name.toLowerCase() === query.toLowerCase()
-//         );
-
-//         if (!employee) {
-//             console.log("Employee is not found");
-//             return;
-//         }
 
 //         if (newName) employee.setName(newName);
 //         if (newAge) employee.setAge(newAge);
