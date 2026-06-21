@@ -57,7 +57,7 @@ async function main() {
                     const queryUpdate = {
                         age: updateAge,
                         email: updateEmail,
-                        number: updateNumber || undefined
+                        number: updateNumber
                     };
 
                     updateStudents(students, queryUpdate, searchName);
