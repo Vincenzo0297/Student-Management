@@ -6,7 +6,7 @@ function viewAllStudents(Students) {
         } else {
            console.log("\n=== View All Students ===");
            Students.forEach((student, index) => {
-                console.log(`${index + 1}. Name: ${student.name}, Age: ${student.age},  Email: ${student.email}, Number: ${student.number}`);
+                console.log(`${index + 1}. Name: ${student.name}, Age: ${student.age}, Email: ${student.email}, Number: ${student.number}`);
            });
         }
     } catch (error) {

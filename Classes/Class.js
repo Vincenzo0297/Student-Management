@@ -37,13 +37,6 @@ class user {
     setNumber(number) {
         this.number = number;
     }
-
-    printInfo(){
-        console.log(`Name: ${this.name}`);
-        console.log(`Age: ${this.age}`);
-        console.log(`Email: ${this.email}`);
-        console.log(`Number: ${this.number}`);
-    }
 }
 
 module.exports = user;

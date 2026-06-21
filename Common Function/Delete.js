@@ -1,7 +1,7 @@
 function deleteStudents(Students, query) {
     try {
         if (Students.length === 0) {
-            console.log("Employee is not found");
+            console.log("Student is not found");
             return;
         } else {
             const foundStudent = Students.findIndex(
