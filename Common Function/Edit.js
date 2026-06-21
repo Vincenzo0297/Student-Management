@@ -7,6 +7,7 @@ function updateStudents(Students, searchName, updateAge, updateEmail, updateNumb
             const foundStudent = Students.find(
                 (student) => student.name.toLowerCase().includes(searchName.toLowerCase())
             );
+
             if (foundStudent) {
                 if (updateAge) foundStudent.age = updateAge;
                 if (updateEmail) foundStudent.email = updateEmail;
